@@ -1,0 +1,169 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+body{
+    background-color:  rgb(27, 34, 87);
+}
+
+#msg{
+    color: orange;
+}
+
+/* HEADER */
+.header{
+    padding: 20px;
+    color: white;
+    background-color: #040425;
+}
+.header h2{
+    float: left;
+}
+
+.header>button, .header a>button{
+    float : right;
+    height: 30px;
+    color : white;
+    background-color : orange;
+    padding-right: 5px;
+    padding-left : 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right : 10px;
+}
+.clear-fix{
+    clear: both;
+}
+
+/* DATA TABLE */
+#example_wrapper{
+    width: 1005px;
+    margin: 20px auto;
+    border-radius : 5px;
+}
+
+.edit-button,.delete-button{
+    height: 30px;
+    color : white;
+    background-color : orange;
+    padding-right: 5px;
+    padding-left : 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* POP UP */
+.edit-overlay , .delete-overlay{
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+
+.card{
+    position: absolute;
+    top : 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3c3c40;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius : 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from { opacity:0} 
+    to { opacity:1}
+}
+
+@keyframes animatetop {
+    from { opacity:0}
+    to { opacity:1}
+}
+.card{
+    width: 350px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#FFF;
+}
+
+.card h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card input{
+    width: 100%;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    outline: none;
+    border: 0.5px solid #00000054;;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card p{
+    text-align: left;
+    font-size: 15px;
+}
+
+.card button{
+    padding: 10px;
+    margin-top : 20spx;
+    border-radius : 5px;
+    color: white;
+    background-color: rgb(27, 34, 87);
+}
+
+.card .error-msg{
+    color: red;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.card .delete-message{
+    margin-bottom : 20px;
+    text-align: center;
+}
+table.dataTable {
+    text-align: center;
+}
+
+table.dataTable thead th{
+    color: white;
+    background-color: #151313;
+}
+
+table.dataTable tfoot th{
+    color: white;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled{
+    color: white ;
+}
